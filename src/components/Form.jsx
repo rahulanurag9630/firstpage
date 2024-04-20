@@ -3,9 +3,9 @@ import React from 'react';
 function Form() {
     return (
         <div>
-            <form className="w-full max-w-sm">
+            <form className=" max-w-md p-4"  >
                 {/* First line */}
-                <div className="grid grid-cols-2 gap-4 py-2">
+                <div className="grid grid-cols-2 gap-4 py-2" >
                     {/* Company name field */}
                     <div className="flex flex-col">
                         <label htmlFor="companyName" className="mb-1 text-sm font-semibold text-black">Company Name</label>
@@ -18,7 +18,7 @@ function Form() {
                             />
                         </div>
                     </div>
-                    {/* Phone number field */}
+                    {/* Phone number field */}  
                     <div className="flex flex-col">
                         <label htmlFor="phoneNumber" className="mb-1 text-sm font-semibold text-black">Phone Number</label>
                         <div className="relative">
@@ -81,7 +81,7 @@ function Form() {
                 {/* Checkbox */}
                 <div className="flex items-center mb-6">
                     <label className="flex items-center block text-black">
-                        <input className="mr-2 leading-tight h-5 w-5" type="checkbox"/>
+                        <input className="mr-2 leading-tight h-5 w-5" type="checkbox" />
                         <span className="text-lg">
                             Send me your newsletter!
                         </span>

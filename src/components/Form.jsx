@@ -3,12 +3,12 @@ import React from 'react';
 function Form() {
     return (
         <div>
-            <form className=" max-w-md p-4"  >
+            <form className=" max-w-xl lg:px-4"  >
                 {/* First line */}
                 <div className="grid grid-cols-2 gap-4 py-2" >
                     {/* Company name field */}
                     <div className="flex flex-col">
-                        <label htmlFor="companyName" className="mb-1 text-sm font-semibold text-black">Company Name</label>
+                        <label htmlFor="companyName" className="mb-1 text-xs font-semibold text-black">Company Name *</label>
                         <div className="relative">
                             <input
                                 id="companyName"
@@ -20,7 +20,7 @@ function Form() {
                     </div>
                     {/* Phone number field */}  
                     <div className="flex flex-col">
-                        <label htmlFor="phoneNumber" className="mb-1 text-sm font-semibold text-black">Phone Number</label>
+                        <label htmlFor="phoneNumber" className="mb-1 text-xs font-semibold text-black">Phone Number*</label>
                         <div className="relative">
                             <input
                                 id="phoneNumber"
@@ -34,7 +34,7 @@ function Form() {
                 {/* Second line */}
                 <div className="flex flex-col items-start py-2">
                     {/* Email field */}
-                    <label htmlFor="email" className="mb-1 text-sm font-semibold text-black">Email</label>
+                    <label htmlFor="email" className="mb-1 text-xs font-semibold text-black">Email*</label>
                     <div className="relative w-full">
                         <input
                             id="email"
@@ -48,7 +48,7 @@ function Form() {
                 <div className="grid grid-cols-2 gap-4 py-2">
                     {/* Current course field */}
                     <div className="flex flex-col">
-                        <label htmlFor="currentCourse" className="mb-1 text-sm font-semibold text-black">Current Course</label>
+                        <label htmlFor="currentCourse" className="mb-1 text-xs font-semibold text-black">Current Course*</label>
                         <div className="relative">
                             <input
                                 id="currentCourse"
@@ -60,7 +60,7 @@ function Form() {
                     </div>
                     {/* Select course field */}
                     <div className="flex flex-col">
-                        <label htmlFor="selectCourse" className="mb-1 text-sm font-semibold text-black">Select Course</label>
+                        <label htmlFor="selectCourse" className="mb-1 text-xs font-semibold text-black">Select Course</label>
                         <div className="relative">
                             <select
                                 id="selectCourse"
@@ -91,10 +91,11 @@ function Form() {
                 {/* Sign Up button */}
                 <div className="flex justify-end mt-4">
                     <button
-                        className="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded"
+                        className="flex-shrink-0  text-sm  text-white py-1 px-2 rounded"
+                        style={{background:'#2C8DB6'}}
                         type="submit"
                     >
-                        Sign Up
+                        Enroll Now
                     </button>
                 </div>
             </form>

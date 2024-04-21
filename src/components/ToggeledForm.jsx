@@ -11,15 +11,17 @@ function ToggledForm() {
   return (
     <div>
       <div className="flex justify-center mb-4">
-        <div className='w-10/12 justify-center flex bg-gray-300 rounded-lg'>
+        <div className='w-10/12 h-14 justify-center flex bg-gray-300 rounded-lg'>
           <button
-            className={`py-2 w-8/12 px-4 text-black text-xl rounded-lg ${isIndividualForm ? 'bg-blue-400 text-white' : 'bg-gray-300 '}`}
+            className={`py-2 w-8/12 px-4 text-black text-xl rounded-lg '}` }
+            style={{ backgroundColor: isIndividualForm ? '#2C8DB6' : '#d1d5db', color: isIndividualForm ? '#ffffff' : '#000000' }}
             onClick={() => toggleForm()}
           >
            For Individuals
           </button>
           <button
-            className={`py-2 px-4 w-8/12 rounded-lg text-black text-xl ${isIndividualForm ? 'bg-gray-300 ' : 'bg-blue-400 text-white'}`}
+            className={`py-2 px-4 w-8/12 rounded-lg text-black text-xl '}`}
+            style={{ backgroundColor: isIndividualForm ? '#d1d5db' : '#2C8DB6', color: isIndividualForm ? '#000000' : '#ffffff' }}
             onClick={() => toggleForm()}
           >
             For Corporate
@@ -27,11 +29,11 @@ function ToggledForm() {
         </div>
       </div>
       {isIndividualForm ? (
-        <div className="max-w-md p-4">
+        <div className="p-4">
           <Form />
         </div>
       ) : (
-        <div className="max-w-md p-4">
+        <div className=" p-4">
           <Form />
         </div>
       )}

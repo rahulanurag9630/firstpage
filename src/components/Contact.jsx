@@ -10,36 +10,35 @@ import linkedin from '../assets/linkedin.png'
 
 function Contact() {
     return (
-        <div className="  p-6 bg-blue-600" style={{height:'70vh' ,width:'90%',borderRadius:'10px', backgroundColor: '#2C8DB6', }}>
+        <div className="  p-6 bg-blue-600 overflow-hidden " style={{height:'70vh' ,width:'90%',borderRadius:'10px', backgroundColor: '#2C8DB6', }}>
             {/* Contact Us heading */}
             <div className="mb-2">
-                <h1 className="text-white font-medium text-3xl">Contact Us</h1>
+                <h1 className="text-white font-normal text-3xl">Contact Us</h1>
             </div>
 
 
             <div className="mb-10">
-                <p className="text-gray-400 text-lg " style={{ color: "#C9C9C9" }}>Say something to start a live chat!</p>
+                <p className="text-gray-300 text-lg " style={{ color: "#C9C9C9" }}>Say something to start a live chat!</p>
             </div>
 
             {/* Phone number */}
             <div className="mb-5 flex items-center">
                 <div className="w-6 h-6 mr-2  rounded-full"><img src={img2} alt="" /></div>
-                <p className="text-white text-base">+91 9182384041</p>
+                <p className="text-white font-light text-base">+91 9182384041</p>
             </div>
 
             {/* Email address */}
             <div className="mb-5 flex items-center">
                 <div className="w-6 h-6 mr-2  rounded-full"><img src={img1} alt="" /></div>
-                <p className="text-white text-base">info@excellenc.in</p>
+                <p className="text-white font-light text-base">info@excellenc.in</p>
             </div>
 
             {/* Exact address */}
             <div className="mb-28 flex items-start">
                 <div className="w-6 h-6 mr-2 rounded-full"><img src={img3} alt="" className='w-6 h-6' /></div>
-                <p className="text-white text-base w-80 text-wrap">EXcellenC - 3rd Floor, Gnana Towers,  Road no 13, Near DMart, Kavuri Hills,  Madhapur, Hyderabad, Telangana 500081.</p>
+                <p className="text-white font-light text-base w-80 text-wrap">EXcellenC - 3rd Floor, Gnana Towers,  Road no 13, Near DMart, Kavuri Hills,  Madhapur, Hyderabad, Telangana 500081.</p>
             </div>
-<div style={{position:'absolute',height:'75px', width:'75px',background:'white',left:'100px'}}></div>
-<div style={{position:'absolute', height:'100px',width:'100px',background:'black'}}></div>
+ 
             {/* Social media icons */}
             <div className="flex flex-row gap-1 ">
                 <div className='h-7 w-7 rounded-full bg-black align-middle justify-center flex p-1'><img src={facebook} alt="" /></div>
@@ -48,8 +47,19 @@ function Contact() {
                 <div className='h-7 w-7 rounded-full bg-white align-middle justify-center flex p-2'><img src={linkedin} alt="" /></div>
                 <div className='h-7 w-7 rounded-full bg-black align-middle justify-center flex p-2'><img src={you} alt="" /></div>
             </div>
+            <div style={{height:'250px',width:'250px',position:'relative', background:'#0075A6',opacity:'0.5',top:'-90px',left:'250px',marginBottom:'',borderRadius:'50%'}}></div>
+            <div style={{height:'100px',width:'100px',position:'relative', background:'#001683',opacity:'0.5',top:'-350px',left:'230px',marginBottom:'',borderRadius:'50%'}}></div>
         </div>
     )
 }
 
 export default Contact;
+
+// height: 100px;
+// width: 100px;
+// position: relative;
+// background: black;
+// top: -43px;
+// left: 185px;
+// margin-bottom: -50px;
+// border-radius: 60%;   #001683

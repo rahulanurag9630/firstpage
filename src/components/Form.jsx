@@ -3,9 +3,9 @@ import React from 'react';
 function Form() {
     return (
         <div>
-            <form className=" max-w-xl lg:px-4"  >
+            <form className="w-full lg:px-4">
                 {/* First line */}
-                <div className="grid grid-cols-2 gap-4 py-2" >
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-2">
                     {/* Company name field */}
                     <div className="flex flex-col">
                         <label htmlFor="companyName" className="mb-1 text-xs font-semibold text-black">Company Name *</label>
@@ -18,7 +18,7 @@ function Form() {
                             />
                         </div>
                     </div>
-                    {/* Phone number field */}  
+                    {/* Phone number field */}
                     <div className="flex flex-col">
                         <label htmlFor="phoneNumber" className="mb-1 text-xs font-semibold text-black">Phone Number*</label>
                         <div className="relative">
@@ -45,7 +45,7 @@ function Form() {
                     </div>
                 </div>
                 {/* Third line */}
-                <div className="grid grid-cols-2 gap-4 py-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-2">
                     {/* Current course field */}
                     <div className="flex flex-col">
                         <label htmlFor="currentCourse" className="mb-1 text-xs font-semibold text-black">Current Course*</label>
@@ -89,9 +89,9 @@ function Form() {
                 </div>
 
                 {/* Sign Up button */}
-                <div className="flex justify-end mt-4">
+                <div className="flex justify-center md:justify-end mt-4">
                     <button
-                        className="flex-shrink-0  text-sm  text-white py-1 px-2 rounded"
+                        className="flex-shrink-0 text-sm text-white py-1 px-2 rounded"
                         style={{background:'#2C8DB6'}}
                         type="submit"
                     >

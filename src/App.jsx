@@ -14,13 +14,13 @@ function App() {
 
   return (
     <>
-   {/* <F1 />
-   <Locations /> */}
-   <Carousel />
+   <F1 />
+   <Locations />
+   {/* <Carousel />
    <Roadmap />
    <Support />
    <CertificateSection />
-   <Investment />
+   <Investment /> */}
 
     </>
   )

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Form from './Form';
+import Form2 from './Form2';
 
 function ToggledForm() {
   const [isIndividualForm, setIsIndividualForm] = useState(true);
@@ -10,8 +11,8 @@ function ToggledForm() {
 
   return (
     <div>
-      <div className="flex justify-center mb-4 pl-3">
-        <div className="w-full lg:w-full h-16 justify-center flex bg-gray-300 rounded-lg">
+      <div className="flex  mb-4 pl-3">
+        <div className="w-full lg:w-full h-16  flex bg-gray-300 rounded-lg">
           <button
             className={`py-2 lg:py-4 w-1/2  lg:w-8/12 text-black text-lg lg:text-xl rounded-lg`}
             style={{
@@ -34,9 +35,11 @@ function ToggledForm() {
           </button>
         </div>
       </div>
-      <div className="p-4">
+     {isIndividualForm?  <div className="p-1">
         <Form />
-      </div>
+      </div>: <div className="p-1">
+        <Form2 />
+      </div>}
     </div>
   );
 }

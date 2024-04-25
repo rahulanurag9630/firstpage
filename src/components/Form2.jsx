@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Form() {
+function Form2() {
     return (
         <div>
             <form className="w-full lg:px-4">
@@ -32,23 +32,37 @@ function Form() {
                     </div>
                 </div>
                 {/* Second line */}
-                <div className="flex flex-col items-start py-2">
-                    {/* Email field */}
-                    <label htmlFor="email" className="mb-1 text-xs font-semibold text-black">Email*</label>
-                    <div className="relative w-full">
-                        <input
-                            id="email"
-                            className="appearance-none bg-transparent border-b border-black w-full text-gray-700 py-1 px-2 leading-tight focus:outline-none"
-                            type="email"
-                            aria-label="Email"
-                        />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-2">
+                    {/* Company name field */}
+                    <div className="flex flex-col">
+                        <label htmlFor="companyName" className="mb-1 text-xs font-semibold text-black">Email ID *</label>
+                        <div className="relative">
+                            <input
+                                id="companyName"
+                                className="appearance-none bg-transparent border-b border-black w-full text-gray-700 py-1 px-2 leading-tight focus:outline-none"
+                                type="text"
+                                aria-label="Company Name"
+                            />
+                        </div>
+                    </div>
+                    {/* Phone number field */}
+                    <div className="flex flex-col">
+                        <label htmlFor="phoneNumber" className="mb-1 text-xs font-semibold text-black">Current Location*</label>
+                        <div className="relative">
+                            <input
+                                id="phoneNumber"
+                                className="appearance-none bg-transparent border-b border-black w-full text-gray-700 py-1 px-2 leading-tight focus:outline-none"
+                                type="text"
+                                aria-label="Phone Number"
+                            />
+                        </div>
                     </div>
                 </div>
                 {/* Third line */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-2">
                     {/* Current course field */}
                     <div className="flex flex-col">
-                        <label htmlFor="currentCourse" className="mb-1 text-xs font-semibold text-black">Current Course*</label>
+                        <label htmlFor="currentCourse" className="mb-1 text-xs font-semibold text-black">No of Emp*</label>
                         <div className="relative">
                             <input
                                 id="currentCourse"
@@ -103,4 +117,4 @@ function Form() {
     )
 }
 
-export default Form;
+export default Form2;

@@ -50,10 +50,12 @@ function Contact() {
             </div>
 
             {/* Bottom div with circles */}
-            <div className="absolute bottom-0 left-72 " style={{ width: '40%', height: '40%', }}>
-                <div style={{ height: '250px', width: '250px', position: 'absolute', background: '#0075A6',top: '-100px', left: '220px', borderRadius: '50%' }}></div>
-                <div style={{ height: '100px', width: '100px', position: 'absolute', background: '#001683',  top: '-360px', left: '210px', borderRadius: '50%' }}></div>
-            </div>
+            <div className="absolute bottom-0 left-72">
+    <div className="hidden lg:block" style={{ height: '250px', width: '250px', position: 'absolute', background: '#0075A6',top: '-150px', left: '-30px', borderRadius: '50%' }}></div>
+    <div className="hidden lg:block" style={{ height: '100px', width: '100px', position: 'absolute', background: '#001683',opacity:'0.5',left:'-30px',  top: '-180px', borderRadius: '50%' }}></div>
+</div>
+
+
         </div>
     );
 }
